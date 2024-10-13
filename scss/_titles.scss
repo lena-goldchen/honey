@@ -1,0 +1,15 @@
+.title {
+  @include fluid-text(36, 24);
+  font-family: var(--font-family-base);
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--color-dark);
+}
+
+.subtitle {
+  margin-inline: auto;
+  line-height: 1.67;
+  text-align: center;
+  color: var(--color-dark-alt);
+}

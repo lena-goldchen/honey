@@ -1,0 +1,40 @@
+.button {
+  @include reset-button;
+  background-color: #D3A863;
+  color: var(--color-light);
+  width: 140px;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+
+  @include mobile {
+    padding: 10px;
+  }
+
+  &--accent {
+    background-color: var(--color-accent);
+  }
+
+  &--chat {
+    border-radius: 50px;
+    width: unset;
+    padding: 14px 20px;
+    background-color: #EE2852;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    text-transform: none;
+    letter-spacing: 0.04em;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+  }
+
+  @include hover {
+    opacity: 0.7;
+  }
+}
